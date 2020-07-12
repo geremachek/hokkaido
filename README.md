@@ -2,6 +2,7 @@
 
 <p align="center">Add some zen to your terminal!</p>
 <br><br>
+<p align="center"><img src="kokyu.gif"></p>
 
 **About:**
 
