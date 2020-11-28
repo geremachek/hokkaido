@@ -1,5 +1,5 @@
 """
-    kokyu - geremachek (c) 2020 <http://geremachek.io/>
+    rho - geremachek (c) 2020 <http://geremachek.io/>
 """
 
 from .util import start
@@ -9,7 +9,7 @@ import sys
 def main():
     # argparse
 
-    p = argparse.ArgumentParser(prog="kokyu", description="Add some zen to your terminal")
+    p = argparse.ArgumentParser(prog="rho", description="Add some zen to your terminal")
     g = p.add_mutually_exclusive_group()
 
     # options/arguments
@@ -24,11 +24,11 @@ def main():
     args = p.parse_args()
 
     if not args.bright and not args.dark:
-        print("kokyu: error: the following arguments are required: [-b | -d]", file=sys.stderr)
+        print("rho: error: the following arguments are required: [-b | -d]", file=sys.stderr)
     else:
         try:
             start(args.COLOR, args.bright, args.dark, args.delay, args.cycles)
         except:
-            print("kokyu: error: something's not right", file=sys.stderr)
+            print("rho: error: something's not right", file=sys.stderr)
 
 main()
