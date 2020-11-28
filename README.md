@@ -20,7 +20,7 @@ To make sure that your terminal supports the escape sequences needed, run ```pri
 
 ```
 git clone http://github.com/geremachek/rho
-cd kokyu/
+cd rho/
 pip install --user .
 ```
 
