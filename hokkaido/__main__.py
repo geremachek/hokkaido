@@ -1,5 +1,5 @@
 """
-    rho - geremachek (c) 2020 <http://geremachek.io/>
+	hokkaido - geremachek (c) 2020 <http://geremachek.io/>
 """
 
 from .util import start
@@ -9,7 +9,7 @@ import sys
 def main():
     # argparse
 
-    p = argparse.ArgumentParser(prog="rho", description="Add some zen to your terminal")
+    p = argparse.ArgumentParser(prog="hokkaido", description="Add some zen to your terminal")
     g = p.add_mutually_exclusive_group()
 
     # options/arguments
@@ -29,6 +29,6 @@ def main():
         try:
             start(args.COLOR, args.bright, args.dark, args.delay, args.cycles)
         except:
-            print("rho: error: something's not right", file=sys.stderr)
+            print("hokkaido: error: something's not right", file=sys.stderr)
 
 main()

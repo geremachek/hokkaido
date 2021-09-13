@@ -1,33 +1,31 @@
-<h1 align="center">ρ</h1>
-
-<p align="center">Add some zen to your terminal!</p>
+# hokkaido
 
 **About:**
 
-```rho``` is a simple python program that will slowly pulse the colors of your terminals in a sort of "breathing" pattern
+```hokkaido``` is a simple python program that will slowly pulse the colors of your terminals in a sort of "breathing" pattern
 
 **Why?**
 
-I created ```rho``` because I was tired of staring at a solid color text-mode terminal all day, and I wanted to add some vibrancy to my rice without using anything too distracting
+I created ```hokkaido``` because I was tired of staring at a solid color text-mode terminal all day, and I wanted to add some vibrancy to my rice without using anything too distracting
 
 **How does it work?**
 
-```rho``` looks at all of the open terminals in ```/dev/pts/``` and sends a special escape sequence containing the current color to each one.
+```hokkaido``` looks at all of the open terminals in ```/dev/pts/``` and sends a special escape sequence containing the current color to each one.
 
 To make sure that your terminal supports the escape sequences needed, run ```printf "\033]11;#ffff00\007"```. You terminal's background color should now be a solid yellow color
 
 **Installation:**
 
 ```
-git clone http://github.com/geremachek/rho
-cd rho/
+git clone http://github.com/geremachek/hokkaido
+cd hokkaido/
 pip install --user .
 ```
 
 **Usage:**
 
 ```
-usage: rho [-h] [-D DELAY] [-c CYCLES] [-b | -d] COLOR
+usage: hokkaido [-h] [-D DELAY] [-c CYCLES] [-b | -d] COLOR
 
 Add some zen to your terminal
 
