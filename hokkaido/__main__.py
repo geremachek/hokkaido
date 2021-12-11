@@ -2,7 +2,7 @@
 	hokkaido - geremachek (c) 2020 <http://geremachek.io/>
 """
 
-from .util import start
+from util import start
 import argparse
 import sys
 
@@ -31,4 +31,5 @@ def main():
         except:
             print("hokkaido: error: something's not right", file=sys.stderr)
 
-main()
+if __name__ == "__main__":
+	main()
