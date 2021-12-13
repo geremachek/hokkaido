@@ -2,7 +2,7 @@
 	hokkaido - geremachek (c) 2020 <http://geremachek.io/>
 """
 
-from util import start
+from .util import start
 import argparse
 import sys
 
